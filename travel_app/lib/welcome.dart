@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/introduction.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -19,20 +20,23 @@ class _WelcomePage extends StatelessWidget {
       body: Container(
         child: Stack(
           children: [
-            SizedBox(
-              height: 300,
-            ),
-            Text(
-              'VietNamTravel',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold),
-            ),
             Positioned.fill(
               child: Image.asset(
                 'assets/travel.jpg',
                 fit: BoxFit.cover,
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(30),
+              margin: EdgeInsets.only(top: 135),
+              alignment: Alignment.topCenter,
+              child: Text(
+                'VietNamTravel',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w900,
+                ),
               ),
             ),
             Container(
@@ -46,7 +50,12 @@ class _WelcomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30)),
                     color: Colors.cyanAccent,
                     padding: EdgeInsets.all(20),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Introduction()));
+                    },
                     child: Text(
                       'Đăng nhập',
                       style: TextStyle(
