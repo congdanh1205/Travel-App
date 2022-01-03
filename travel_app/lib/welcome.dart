@@ -57,7 +57,7 @@ class _WelcomePage extends StatelessWidget {
                               builder: (context) => Introduction()));
                     },
                     child: Text(
-                      'Đăng nhập',
+                      'Go',
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
