@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:travel_app/login.dart';
 
 class Introduction extends StatefulWidget {
   @override
@@ -125,10 +126,10 @@ class _IntroductionState extends State<Introduction> {
                       color: Colors.cyanAccent,
                       padding: EdgeInsets.all(20),
                       onPressed: () {
-                        // ThisNavigator.push(
-                        // context,
-                        // MaterialPageRoute(
-                        //builder: (context) => Introduction()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()));
                       },
                       child: Text(
                         'Đăng nhập',
