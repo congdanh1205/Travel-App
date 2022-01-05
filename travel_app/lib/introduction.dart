@@ -127,16 +127,14 @@ class _IntroductionState extends State<Introduction> {
                       color: Colors.cyanAccent,
                       padding: EdgeInsets.all(20),
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Login()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Login()));
                       },
                       child: Text(
                         'Đăng nhập',
                         style: TextStyle(
-                            color: Colors.white,
-                            ),
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
@@ -156,7 +154,8 @@ class _IntroductionState extends State<Introduction> {
                       color: Colors.white,
                       padding: EdgeInsets.all(20),
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => SignUp()));
                         // ThisNavigator.push(
                         // context,
                         // MaterialPageRoute(
