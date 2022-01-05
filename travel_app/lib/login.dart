@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/home.dart';
 import 'package:travel_app/sign_up.dart';
 
 class Login extends StatefulWidget {
@@ -81,10 +82,8 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.cyanAccent,
                   padding: EdgeInsets.all(20),
                   onPressed: () {
-                    //Navigator.push(
-                    //  context,
-                    //  MaterialPageRoute(
-                    //      builder: (context) => Login()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeScreen()));
                   },
                   child: Text(
                     'Đăng Nhập',
