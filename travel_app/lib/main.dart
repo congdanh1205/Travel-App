@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/welcome.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());

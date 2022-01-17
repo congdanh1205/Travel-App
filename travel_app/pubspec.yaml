@@ -36,6 +36,9 @@ dependencies:
   carousel_slider: ^4.0.0
   smooth_page_indicator: ^1.0.0+2
   flutter_signin_button: ^2.0.0
+  flutter_svg: ^0.22.0
+  flutter_icons: ^1.1.0
+  keyboard_avoider: ^0.1.2
   flutter_swiper: ^1.1.6
 
 dev_dependencies:
@@ -62,6 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/icons
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -77,9 +81,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: MyFlutterApp
+    - family: Billabong
       fonts:
-        - asset: assets/fonts/MyFlutterApp.ttf
+        - asset: assets/fonts/Billabong.ttf
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
